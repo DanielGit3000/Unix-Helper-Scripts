@@ -18,7 +18,7 @@ PasswordAuthentication no
 PermitRootLogin no
 ############### END
 
-# create portnat if neeeded
+# create portnat if neeeded (on windows hypervisor)
 netsh interface portproxy add v4tov4 listenport=22 connectport=22 connectaddress=172.21.133.47
 netsh interface portproxy show v4tov4
 
