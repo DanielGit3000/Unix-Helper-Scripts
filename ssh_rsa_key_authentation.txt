@@ -2,7 +2,8 @@
 ssh-keygen -t rsa -b 4096 
 cat id_rsa.pub  >> authorized_keys
 chown daniel:daniel .ssh/
-chmod 600 -R .ssh/*
+chmod 700 .ssh
+chmod 600 .ssh/*
 sudo /etc/init.d/ssh restart
 
 #on client 
